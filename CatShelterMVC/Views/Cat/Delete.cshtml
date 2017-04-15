@@ -1,0 +1,24 @@
+﻿@model CatShelterMVC.Models.Cat
+
+
+<div class="container" style="margin-top: 20px">
+    <div class="alert alert-info">
+        <h3>Are you sure you want to delete @Model.Name?</h3>
+        <h3>Name - @Model.Name</h3>
+        <h4>Color - @Model.Color</h4>
+        <h5>City - @Model.City</h5>
+
+
+        @using (Html.BeginForm())
+        {
+            @Html.AntiForgeryToken()
+
+            <div class="btn-group">
+                <input type="submit" value="Delete" class="btn btn-info btn-lg" />
+            </div>
+        }
+    </div>
+
+    @Html.ActionLink("Back to List", "Index")
+
+</div>

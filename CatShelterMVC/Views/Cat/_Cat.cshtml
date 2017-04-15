@@ -1,0 +1,24 @@
+﻿@model IEnumerable<CatShelterMVC.Models.Cat>
+
+<div id="catList">
+
+    @foreach (var item in Model)
+    {
+        <div class="alert alert-info" style="margin-top: 5px">
+            <div class="form-horizontal">
+                <h3>Name - @item.Name</h3>
+                <h4>Color - @item.Color </h4>
+                <h5>City - @item.City</h5>
+            </div>
+            <div>
+                <p>
+                    @Html.ActionLink("Details", "Details", "Cat", new { id = item.Id }, null) |
+                    @Html.ActionLink("Edit", "Edit", "Cat", new { id = item.Id }, null) | @Html.ActionLink("Delete", "Delete", "Cat", new { id = item.Id }, null)
+                </p>
+            </div>
+        </div>
+
+
+    }
+
+</div>

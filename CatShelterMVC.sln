@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.40629.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CatShelterMVC", "CatShelterMVC\CatShelterMVC.csproj", "{07705E71-8D01-4121-A1D4-4E05EE12FFB0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CatShelterMVC.Tests", "CatShelterMVC.Tests\CatShelterMVC.Tests.csproj", "{49F3F793-6ADB-4B50-99B5-003C410634EC}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{07705E71-8D01-4121-A1D4-4E05EE12FFB0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{07705E71-8D01-4121-A1D4-4E05EE12FFB0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{07705E71-8D01-4121-A1D4-4E05EE12FFB0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{07705E71-8D01-4121-A1D4-4E05EE12FFB0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{49F3F793-6ADB-4B50-99B5-003C410634EC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{49F3F793-6ADB-4B50-99B5-003C410634EC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{49F3F793-6ADB-4B50-99B5-003C410634EC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{49F3F793-6ADB-4B50-99B5-003C410634EC}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,41 @@
+﻿@model IEnumerable<CatShelterMVC.Models.Cat>
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Cat Shelter</h2>
+
+<h4>@Html.ActionLink("Create New", "Create", "Cat")</h4>
+
+@*<form method="get">
+        <input type="search" name="search" class="form-control" /><br />
+        <input type="submit" value="Search" class="btn btn-info btn-block" />
+    </form>*@
+
+@using (Ajax.BeginForm(
+    new AjaxOptions
+    {
+        HttpMethod = "GET",
+        InsertionMode = InsertionMode.Replace,
+        UpdateTargetId = "catList"
+    }))
+{
+    <div class="row">
+        <div class="col-lg-3">
+            <div class="input-group">
+                <input type="search" name="search" class="form-control" placeholder="Please enter name" />
+                <span class="input-group-btn">
+                    <button class="btn btn-primary">
+                        <span class="glyphicon glyphicon-search"></span>
+                    </button>
+                </span>
+            </div>
+        </div>
+    </div>
+   
+   
+}
+
+@Html.Partial("_Cat", Model)
+
+
